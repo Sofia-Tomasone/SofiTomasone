@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">Ya Vino</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <a class="nav-link" href="#hero">Home</a>        
+        <a class="nav-link" href="#quienesSomos">Nosotros</a>
+        <a class="nav-link" href="#suscrpciones">Suscrpciones</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <li class="nav-item"><a class="nav-link" href="#"><strong>Ingresar</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section id="hero" class="section-spacing bg-cover text-white d-flex align-items-center" style="background-image: url('imagen/FondoHero.jpg'); min-height: 100vh;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Texto principal -->
+      <div class="col-lg-6">
+        <h2 class="mb-5 text-uppercase" class="h2-custom">Tu nueva forma de descubrir el vino</h2>
+        <h5 class="h5-custom">Cada mes, sommeliers seleccionan vinos únicos para vos.<br>
+        Explorá regiones, varietales y cosechas sin moverte de tu casa.</h5>
+        <div class="d-flex gap-3 mt-4">
+          <a href="Detalle.html" class="btn btn-dark">Suscribite</a>
+        </div>
+      </div>
+
+      <!-- Imagen destacada -->
+      <div class="col-lg-6 text-center">
+        <img src="imagen/FotoHero1.png" class="img-fluid img-rounded" alt="Imagen Hero" style="max-width: 400px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+ <!-- SECCIÓN 2 Como funciona -->
+<section class="section-spacing container text-center py-5">
+  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Como funciona</h2>
+  <div class="row">
+    <!-- Beneficio 1 -->
+    <div class="col-md-4 mb-4">
+      <h5>Elegí tu plan</h5>
+     <img src="imagen/iconocelu.png" class="img-fluid" style="max-width: 80px;" alt="Icono">
+      <p class="p-custom">Elegí el tipo de sabores y experiencias que prefieras.</p>
+    </div>
+    <!-- Beneficio 2 -->
+    <div class="col-md-4 mb-4">
+      <h5>Recibí tu caja</h5>
+     <img src="imagen/iconocaja.png" class="img-fluid" style="max-width: 80px;" alt="Icono">      
+     <p class="p-custom">Expertos selecionan los mejores productos.</p>
+    </div>
+    <!-- Beneficio 3 -->
+    <div class="col-md-4 mb-4">
+      <h5>Catá y compartí</h5>
+     <img src="imagen/iconocopa.png" style="max-width: 80px;" alt="Icono">      
+     <p class="p-custom">Accedé a fichas, videos y el programa WineSwap.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: quienes somos -->
+<section id="quienesSomos" class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Imagen a la izquierda -->
+    <div class="col-md-6 text-center mb-4 mb-md-0">
+      <img src="imagen/quienesSomos.png" class="img-fluid img-rounded" alt="Imagen">
+    </div>
+    <!-- Texto a la derecha -->
+       <div class="col-md-6 text-center text-md-start">
+      <h3 class="h3-custom">Quienes somos</h3>
+      <h5 class="h5-custom">Somos exploradoras del vino.</h5>
+      <p class="p-custom">Madre e hija armamos esta comunidad porque queremos que descubras con nostras nuevos vinos sin esfuerzo, sin pretensiones y con placer.</p>
+ <div class="col-md-6 text-center text-md-start">
+  </div>
+</section>
+
+<!-- SECCION 4: CAJAS PLANES -->
+<section id="suscrpciones" class="section-spacing container text-center">
+  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Nuestras cajas</h2>
+  <div class="row">
+
+  <div class="row mt-5">
+    
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Imagen ilustrativa -->
+        <img src="imagen/CajaRoja.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Florales y frutales</h5>
+        <!-- Descripción -->
+        <p class="p-custom">Para novatos.</p>
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 3 Botellas de diferentes variedades.</li>
+          <li>✔ 10% en vinotecas seleccionadas.</li>
+          <li>✔ 1 Adicional gastronómico gourmet.</li>
+          <li>✔ Fichas de cata + Video del sommelier.</li>
+        </ul>
+        <p class="display-6 text-primary">$89.999</p>
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">Elegir </a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100 border border-primary">
+        <!-- Imagen ilustrativa -->
+        <img src="imagen/CajaAzul.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Frescos y acidos</h5>
+        <!-- Descripción -->
+        <p class="p-custom">Para expertos.</p>
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 5 Botellas de diferentes variedades.</li>
+          <li>✔ 30% en vinotecas seleccionadas.</li>
+          <li>✔ 5 Adicionales gastronómico gourmet.</li>
+          <li>✔ Fichas de cata + Video del sommelier.</li>
+          <li>✔ Regalo de bienvenida.</li>
+        </ul>
+        <p class="display-6 text-primary">$249.999</p>
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">Elegir </a>
+      </div>
+    </div>
+  
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Imagen ilustrativa -->
+        <img src="imagen/CajaVerde.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Cremosos y especiados</h5>
+        <!-- Descripción -->
+        <p class="p-custom">Para conocedores.</p>
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 4 Botellas de diferentes variedades.</li>
+          <li>✔ 20% en vinotecas seleccionadas.</li>
+          <li>✔ 3 Adicionales gastronómico gourmet.</li>
+          <li>✔ Fichas de cata + Video del sommelier.</li>
+        </ul>
+        <p class="display-6 text-primary">$199.999</p>
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">Elegir </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<!-- SECCIÓN 5: PORQUE ELEGIRNOS -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Imagen a la izquierda -->
+    <div class="col-md-6 text-center mb-4 mb-md-0">
+      <img src="imagen/UVAS DUOTONO.jpg" class="img-fluid img-rounded" alt="Imagen">
+    </div>
+    <!-- Texto a la derecha -->
+    <div class="col-md-6 text-center text-md-start">
+      <h2 class="h2-custom">Te ofrecemos</h2>
+      <h5 class="h5-custom">Selección exclusiva</h5>
+      <p class="p-custom">Cada botella es cuidadosamente elegida por sommeliers expertos. Seleccionamos vinos únicos, de bodegas boutique y partidas limitadas.</p>
+      <h5 class="h5-custom">Acceso a lo inusual</h5>
+      <p class="p-custom">Te acercamos etiquetas que no se encuentran en canales tradicionales. Vinos que cuentan historias, de regiones y productores emergentes.</p>
+      <h5 class="h5-custom">La experiencia completa</h5>
+      <p class="p-custom">Tu caja incluye catas virtuales guiadas, fichas sensoriales y maridajes sugeridos pensados para cada sabor.</p>
+      <h5 class="h5-custom">Libertad de elección</h5>
+      <p class="p-custom">Podes intercambiar botellas con otros socios gracias a nuestro sistema WineSwap.</p>
+    </div>
+
+</section>
+<!-- SECCION 6 EXPERTOS -->
+<section class="section-spacing container text-center">
+  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Nuestros expertos</h2>
+  <div class="row justify-content-center">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+       <img src="imagen/experto1.png" class="mb-3" alt="Servicio">
+        <h5 class="text-uppercase">Laura Ortiz</h5>
+        <h5>Asesora en bodegas o viñedos</h5>
+        <p class="p-custom">"Lo importante no es sólo el vino, sino de dónde viene: el viñedo, la cosecha, la mano que lo elabora. En Ya Vino hay un trabajo de selección muy cuidadoso, que empieza mucho antes de la botella. Por eso cada envío tiene coherencia y cuenta una historia."</p>
+      </div>
+    </div>
+
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+       <img src="imagen/experto2.png" class="mb-3" alt="Servicio">
+        <h5 class="text-uppercase">Andrés Rosberg</h5>
+        <h5>Redactor de artículos sobre vinos</h5>
+        <p class="p-custom">"Lo que diferencia a Ya Vino es que priorizan el origen: pequeñas partidas, varietales auténticos, productores que cuidan la tierra. Esa trazabilidad es un valor enorme hoy, y ellos lo ponen al centro de cada selección."</p>
+      </div>
+    </div>
+</section>
+<!-- /SERVICES -->
+
+<!-- SECCION 7 METODO SWAP -->
+<section class="section-spacing container text-center py-5">
+  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Método WineSwap</h2>
+  <h5>Intercambia tu botella con otro socio del club.</h5>
+
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4 shadow-sm">
+      <img src="imagen/IconoUsuario.png" class="img-fluid d-block mx-auto mb-3" style="max-width: 80px;" alt="Icono">        <h5>Ingresá a tu cuenta</h5>
+        <p class="p-custom">Desde tu perfil y marcá la botella querés intercambiar.</p>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4 shadow-sm">
+      <img src="imagen/IconoVinos.png" class="img-fluid d-block mx-auto mb-3" style="max-width: 80px;" alt="Icono">        <h5>Elegí el intercambio</h5>
+        <p class="p-custom">Seleccioná la botella que te interesa en la lista de disponibles.</p>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4 shadow-sm">
+      <img src="imagen/IconoCalendario.png" class="img-fluid d-block mx-auto mb-3" style="max-width: 80px;" alt="Icono">        <h5>Confirmás y recibís</h5>
+        <p class="p-custom">Seleccioná día de entrega y enviaremos el intercambio.</p>
+      </div>
+   </div>
+  </div>
+  <h5>Tenés un envio gratis por mes</h5>
+</section>
+<!-- /ABOUT -->
+
+<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
+<section class="section-spacing container py-5">
+  
+  <div class="masonry__container">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
+  </div>
+</section>
+
+<!-- GALERÍA vinos -->
+<section class="section-spacing container py-5 text-center">
+  <div class="marquee marquee-left">
+    <div class="marquee-track">
+      <img src="imagen/Botella1.png" alt="Botella 1">
+      <img src="imagen/Botella2.png" alt="Botella 2">
+      <img src="imagen/Botella3.png" alt="Botella 3">
+      <img src="imagen/Botella4.png" alt="Botella 4">
+      <img src="imagen/Botella5.png" alt="Botella 5">
+      <img src="imagen/Botella6.png" alt="Botella 6">
+      <img src="imagen/Botella7.png" alt="Botella 7">
+      <img src="imagen/Botella8.png" alt="Botella 8">
+      <img src="imagen/Botella9.png" alt="Botella 9">
+      <!-- Duplicás las imágenes para que sea infinito -->
+      <img src="imagen/Botella1.png" alt="Botella 1">
+      <img src="imagen/Botella2.png" alt="Botella 2">
+      <img src="imagen/Botella3.png" alt="Botella 3">
+      <img src="imagen/Botella4.png" alt="Botella 4">
+      <img src="imagen/Botella5.png" alt="Botella 5">
+      <img src="imagen/Botella6.png" alt="Botella 6">
+      <img src="imagen/Botella7.png" alt="Botella 7">
+      <img src="imagen/Botella8.png" alt="Botella 8">
+      <img src="imagen/Botella9.png" alt="Botella 9">
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA vinos -->
+<section class="section-spacing container py-5 text-center">
+  <div class="marquee marquee-right">
+    <div class="marquee-track">
+      <img src="imagen/Logo1.png" alt="Logo1">
+      <img src="imagen/Logo2.png" alt="Logo2">
+      <img src="imagen/Logo3.png" alt="Logo3">
+      <img src="imagen/Logo4.png" alt="Logo4">
+      <img src="imagen/Logo5.png" alt="Logo5">
+      <img src="imagen/Logo6.png" alt="Logo6">
+      <img src="imagen/Logo7.png" alt="Logo7">
+      <img src="imagen/Logo8.png" alt="Logo8">
+      <img src="imagen/Logo9.png" alt="Logo9">
+      <img src="imagen/Logo10.png" alt="Logo10">
+      <img src="imagen/Logo11.png" alt="Logo11">
+      <!-- Duplicás las imágenes para continuidad -->
+      <img src="imagen/Logo1.png" alt="Logo1">
+      <img src="imagen/Logo2.png" alt="Logo2">
+      <img src="imagen/Logo3.png" alt="Logo3">
+      <img src="imagen/Logo4.png" alt="Logo4">
+      <img src="imagen/Logo5.png" alt="Logo5">
+      <img src="imagen/Logo6.png" alt="Logo6">
+      <img src="imagen/Logo7.png" alt="Logo7">
+      <img src="imagen/Logo8.png" alt="Logo8">
+      <img src="imagen/Logo9.png" alt="Logo9">
+      <img src="imagen/Logo10.png" alt="Logo10">
+      <img src="imagen/Logo11.png" alt="Logo11">
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS: Opiniones de clientes -->
+<section class="section-spacing container text-center">
+  <div class="row">
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “"No soy experta, pero con esta suscripción me animé a probar varietales que nunca había comprado. ¡Todo llega impecable!"”
+        <footer class="blockquote-footer mt-3">Julián P. 51 años, La Plata</footer>
+      </blockquote>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “"Es un plan perfecto: buenos vinos, sin tener que pensar. Lo recibo, lo disfruto y encima aprendo con cada envío."
+        <footer class="blockquote-footer mt-3">Camila D. 36 años, Bariloche</footer>
+      </blockquote>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “"Vinos fuera de lo comercial. Me sorprendió por la calidad y la presentación. El WineSwap es premium, todo bien cuidado.”
+        <footer class="blockquote-footer mt-3">Tomás V. 38 años, Belgrano</footer>
+      </blockquote>
+    </div>
+
+<!-- FAQS: Preguntas frecuentes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Preguntas Frecuentes</h2>
+  <p class="p-custom">Respuestas a dudas comunes.</p>
+  <div class="accordion mt-5" id="faqAccordion">
+    <!-- Ítem de pregunta -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          ¿Qué incluye el servicio?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Explicación detallada.
+        </div>
+      </div>
+    </div>
+    <!-- Ítem de pregunta -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          ¿Qué incluye el servicio?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Explicación detallada.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /FAQS -->
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section id="contacto" class="bg-cover bg-overlay-light d-flex align-items-center justify-content-center" style="background-image: url('imagen/Fondofinal.jpg'); height: 100vh; padding: 0;">
+  <div class="w-100 text-center px-3" style="max-width: 800px;">
+    <h2 class="h2-custom">Dejanos tu mensaje</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <form style="background-color: rgba(255,255,255,0.85); padding: 20px; border-radius: 12px;">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Mail">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p class="p-custom">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
